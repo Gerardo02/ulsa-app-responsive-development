@@ -39,24 +39,68 @@ body{
     top: 25%;
     left: 0;
     right: 0;
+    color: yellow;
+}
+.container{
+    height: 150px;
+    width: 90%;
+    background-color: firebrick;
+    margin: 0 auto;
+}
+.section{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    margin-left: 10px;
 }
 @media only screen and (max-width: 1300px){
     body{
-        background-color: cyan;
+        background-color: cyan; 
+        font-size: 60px;
+    }
+    .pixels-text{
+        color: indigo;
+        font-size: 50px;
     }
 }
 @media only screen and (max-width: 1000px){
     body{
         background-color: darkblue;
     }
+    .pixels-text{
+        color: rosybrown;
+        font-size: 40px;
+    }
 }
 @media only screen and (max-width: 800px){
     body{
         background-color: darkgreen;
     }
+    .pixels-text{
+        color: rosybrown;
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 600px){
     body{
         background-color: gold;
+    }
+    .pixels-text{
+        color: red;
+        font-size: 20px;
+    }
+    .section{
+        float: none;
+        margin-left: 0px;
+    }
+    .section:hover{
+        background-color: white;
+        color: black;
+    }
+    .container{
+        width: 100%;
+
     }
 }
